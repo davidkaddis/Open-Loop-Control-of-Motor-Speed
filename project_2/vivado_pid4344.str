@@ -1,0 +1,250 @@
+/*
+
+Vivado v2015.2 (64-bit)
+SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+Process ID: 4344
+
+Current time: 	2/5/17 1:19:33 PM PST
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Windows 8
+Version: 6.2
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1600x900
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_25 64-bit
+Java home: 	C:/Xilinx/Vivado/2015.2/tps/win64/jre
+
+User name: 	David Amin
+User directory: C:/Users/David Amin/Documents/ECE 424/424 Lab/project_2
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+Vivado preferences path: C:/Users/David Amin/AppData/Roaming/Xilinx/Vivado/2015.2/vivado.ini
+Vivado layouts directory: C:/Users/David Amin/AppData/Roaming/Xilinx/Vivado/2015.2/layouts/application
+
+GUI allocated memory:	131 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 368 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 33 MB (+32245kb) [00:00:12]
+// [Engine Memory]: 344 MB (+209111kb) [00:00:12]
+// TclEventType: PROJECT_OPEN_DIALOG
+// cp:P (cl:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\David Amin\Documents\ECE 424\424 Lab\project_2\project_2.xpr. Version: Vivado v2015.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/David Amin/Documents/ECE 424/424 Lab/project_2/project_2.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// HMemoryUtils.trashcanNow. Engine heap size: 374 MB. GUI used memory: 27 MB. Current time: 2/5/17 1:19:35 PM PST
+// [Engine Memory]: 375 MB (+14507kb) [00:00:17]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 48 MB (+13883kb) [00:00:22]
+// [GUI Memory]: 51 MB (+551kb) [00:00:24]
+// [Engine Memory]: 418 MB (+25736kb) [00:00:24]
+// [GUI Memory]: 55 MB (+1142kb) [00:00:29]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: open_project {C:/Users/David Amin/Documents/ECE 424/424 Lab/project_2/project_2.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'. 
+// [GUI Memory]: 59 MB (+1679kb) [00:00:30]
+// [Engine Memory]: 446 MB (+7262kb) [00:00:31]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: project_2; location: C:/Users/David Amin/Documents/ECE 424/424 Lab/project_2; part: xc7a100tcsg324-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:19 . Memory (MB): peak = 643.570 ; gain = 98.070 
+dismissDialog("Open Project"); // cp:P (cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// HMemoryUtils.trashcanNow. Engine heap size: 459 MB. GUI used memory: 34 MB. Current time: 2/5/17 1:19:55 PM PST
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 55 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP - Behavioral (TOP.vhd)]", 1); // A:k (H:JPanel, cl:JFrame)
+// PAPropertyPanels.initPanels (DisplayController.vhd) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP - Behavioral (TOP.vhd), DisplayController0 - DisplayController - Behavioral (DisplayController.vhd)]", 5, false); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP - Behavioral (TOP.vhd), DisplayController0 - DisplayController - Behavioral (DisplayController.vhd)]", 5, false, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click
+// [Engine Memory]: 469 MB (+148kb) [00:01:33]
+// [GUI Memory]: 65 MB (+3150kb) [00:01:38]
+// Elapsed time: 31 seconds
+selectCodeEditor("DisplayController.vhd", 473, 232); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("DisplayController.vhd", 479, 227); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("DisplayController.vhd", 396, 251); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("DisplayController.vhd", 455, 254); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "DisplayController.vhd", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("DisplayController.vhd", 485, 252); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "DisplayController.vhd", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("DisplayController.vhd", 44, 265); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("DisplayController.vhd", 436, 250); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("DisplayController.vhd", 331, 245); // bj:J (JPanel:JComponent, cl:JFrame)
+// [GUI Memory]: 70 MB (+2010kb) [00:02:47]
+// [GUI Memory]: 74 MB (+817kb) [00:02:57]
+// Elapsed time: 27 seconds
+selectCodeEditor("DisplayController.vhd", 217, 368); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 79 MB (+462kb) [00:03:08]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // A:k (H:JPanel, cl:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP - Behavioral (TOP.vhd)]", 1, true); // A:k (H:JPanel, cl:JFrame) - Node
+// Elapsed time: 333 seconds
+applyEnter(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, (String) null); // A:k (H:JPanel, cl:JFrame)
+// [GUI Memory]: 83 MB (+98kb) [00:12:32]
+// Elapsed time: 632 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 22, true); // w:Y (v:H, cl:JFrame) - Node
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 23); // w:Y (v:H, cl:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // w:Y (v:H, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// ap:bI (cl:JFrame): Synthesis is Out-of-date: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 482 MB. GUI used memory: 64 MB. Current time: 2/5/17 1:38:37 PM PST
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, ap:bI)
+// cp:P (cl:JFrame):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // ap:bI (cl:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// 'bQ' command handler elapsed time: 3 seconds
+dismissDialog("Resetting Runs"); // cp:P (cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 2 
+// cp:P (cl:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Feb 05 13:38:41 2017] Launched synth_1... Run output will be captured here: C:/Users/David Amin/Documents/ECE 424/424 Lab/project_2/project_2.runs/synth_1/runme.log [Sun Feb 05 13:38:41 2017] Launched impl_2... Run output will be captured here: C:/Users/David Amin/Documents/ECE 424/424 Lab/project_2/project_2.runs/impl_2/runme.log 
+dismissDialog("Generate Bitstream"); // cp:P (cl:JFrame)
+// TclEventType: RUN_FAILED
+// Q:ap (cl:JFrame): Synthesis Failed: addNotify
+// Elapsed time: 49 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, Q:ap)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // Q:ap (cl:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-944] 0 definitions of operator & match here [C:/Users/David Amin/Documents/ECE 424/424 Lab/project_2/project_2.srcs/sources_1/new/DisplayController.vhd:45]. ]", 2, false); // ae:k (JViewport:JComponent, cl:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\David Amin\Documents\ECE 424\424 Lab\project_2\project_2.srcs\sources_1\new\DisplayController.vhd;-;;-;16;-;line;-;45;-;;-;16;-;"); // ae:k (JViewport:JComponent, cl:JFrame)
+// Elapsed time: 19 seconds
+selectCodeEditor("DisplayController.vhd", 270, 231); // bj:J (JPanel:JComponent, cl:JFrame)
+// [GUI Memory]: 87 MB (+18kb) [00:20:42]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 495 MB (+2787kb) [00:20:45]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // w:Y (v:H, cl:JFrame)
+// [GUI Memory]: 92 MB (+283kb) [00:20:46]
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// ap:bI (cl:JFrame): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, ap:bI)
+// cp:P (cl:JFrame):  Resetting Runs : addNotify
+dismissDialog("No Implementation Results Available"); // ap:bI (cl:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // cp:P (cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Sun Feb 05 13:40:07 2017] Launched synth_1... Run output will be captured here: C:/Users/David Amin/Documents/ECE 424/424 Lab/project_2/project_2.runs/synth_1/runme.log [Sun Feb 05 13:40:07 2017] Launched impl_2... Run output will be captured here: C:/Users/David Amin/Documents/ECE 424/424 Lab/project_2/project_2.runs/impl_2/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// [GUI Memory]: 96 MB (+44kb) [00:22:44]
+// TclEventType: RUN_COMPLETED
+// Q:ap (cl:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 238 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a:JRadioButton (JPanel:JComponent, Q:ap)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, Q:ap)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// [GUI Memory]: 106 MB (+4852kb) [00:24:49]
+// Tcl Message: open_hw 
+dismissDialog("Bitstream Generation Completed"); // Q:ap (cl:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // i:l (JPanel:JComponent, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// cp:P (cl:JFrame):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2015.2   **** Build date : Jun 26 2015-16:56:39     ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_DEVICE_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 508 MB. GUI used memory: 68 MB. Current time: 2/5/17 1:44:17 PM PST
+// Tcl Message: open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0] 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292744507A 
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/David Amin/Documents/ECE 424/424 Lab/project_2/project_2.runs/impl_2/TOP.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: current_hw_device [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // cp:P (cl:JFrame)
+// Elapsed time: 51 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // i:l (JPanel:JComponent, cl:JFrame)
+selectMenuItem((HResource) null, "xc7a100t_0"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// PAPropertyPanels.initPanels (xc7a100t_0) elapsed time: 0.2s
+// [Engine Memory]: 520 MB (+804kb) [00:25:53]
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aC:ag (cl:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aC:ag)
+// cp:P (cl:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aC:ag (cl:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/David Amin/Documents/ECE 424/424 Lab/project_2/project_2.runs/impl_2/TOP.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'x' command handler elapsed time: 5 seconds
+dismissDialog("Program Device"); // cp:P (cl:JFrame)
+// Tcl Message: ERROR: [Labtools 27-3175] Target jsn-Nexys4DDR-210292744507A is no longer available. Please use disconnect_hw_server to close the current server connection. Check cable connectivity and that the target board is powered up. Restart the hw_server application running on host localhost, port 3121 and then use connect_hw_server to re-establish connection to target. 
+// Tcl Message: close_hw_target 
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: INFO: [Labtoolstcl 44-464] Closing hw_target localhost/xilinx_tcf/Digilent/210292744507A 

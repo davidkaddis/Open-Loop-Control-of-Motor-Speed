@@ -1,0 +1,106 @@
+/*
+
+Vivado v2015.2 (64-bit)
+SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+Process ID: 9388
+
+Current time: 	4/3/17 3:46:48 PM PDT
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Windows 8
+Version: 6.2
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1600x900
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_25 64-bit
+Java home: 	C:/Xilinx/Vivado/2015.2/tps/win64/jre
+
+User name: 	David Amin
+User directory: C:/Users/David Amin/Documents/ECE 424/424 Lab/project_2
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+Vivado preferences path: C:/Users/David Amin/AppData/Roaming/Xilinx/Vivado/2015.2/vivado.ini
+Vivado layouts directory: C:/Users/David Amin/AppData/Roaming/Xilinx/Vivado/2015.2/layouts/application
+
+GUI allocated memory:	130 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 365 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 47 MB (+46557kb) [00:00:14]
+// [Engine Memory]: 359 MB (+224549kb) [00:00:14]
+// cp:P (cl:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\David Amin\Documents\ECE 424\424 Lab\project_2\project_2.xpr. Version: Vivado v2015.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/David Amin/Documents/ECE 424/424 Lab/project_2/project_2.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// HMemoryUtils.trashcanNow. Engine heap size: 377 MB. GUI used memory: 26 MB. Current time: 4/3/17 3:46:50 PM PDT
+// [Engine Memory]: 377 MB (+673kb) [00:00:18]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 403 MB (+7632kb) [00:00:25]
+// [Engine Memory]: 440 MB (+17229kb) [00:00:27]
+// [GUI Memory]: 52 MB (+2592kb) [00:00:30]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: open_project {C:/Users/David Amin/Documents/ECE 424/424 Lab/project_2/project_2.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 462 MB (+342kb) [00:00:32]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 55 MB (+694kb) [00:00:32]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: project_2; location: C:/Users/David Amin/Documents/ECE 424/424 Lab/project_2; part: xc7a100tcsg324-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:18 . Memory (MB): peak = 649.602 ; gain = 101.145 
+dismissDialog("Open Project"); // cp:P (cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 5); // A:k (H:JPanel, cl:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 4); // A:k (H:JPanel, cl:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 8); // A:k (H:JPanel, cl:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Disabled Sources]", 12); // A:k (H:JPanel, cl:JFrame)
+// PAPropertyPanels.initPanels (DisplayController_test.vhd) elapsed time: 0.2s
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, DisplayController_test - Behavioral (DisplayController_test.vhd)]", 9, true, false, false, false, true, false); // A:k (H:JPanel, cl:JFrame) - Popup Trigger - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP - Behavioral (TOP.vhd)]", 1); // A:k (H:JPanel, cl:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 484 MB. GUI used memory: 36 MB. Current time: 4/3/17 3:47:45 PM PDT
+// [GUI Memory]: 59 MB (+1800kb) [00:02:18]
+// [GUI Memory]: 63 MB (+253kb) [00:04:48]
+// [GUI Memory]: 66 MB (+542kb) [00:05:38]
+// Elapsed time: 368 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP - Behavioral (TOP.vhd), ADC_Controller0 - ADC_Controller - Behavioral (ADC_Controller.vhd)]", 2, false); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP - Behavioral (TOP.vhd), ADC_Controller0 - ADC_Controller - Behavioral (ADC_Controller.vhd)]", 2, false, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click
+// [GUI Memory]: 71 MB (+1043kb) [00:07:20]
+selectCodeEditor("ADC_Controller.vhd", 135, 387); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "ADC_Controller.vhd", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 50 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP - Behavioral (TOP.vhd)]", 1, true); // A:k (H:JPanel, cl:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP - Behavioral (TOP.vhd)]", 1, true, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click - Node
+selectCodeEditor("TOP.vhd", 94, 342); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "TOP.vhd", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+// [GUI Memory]: 74 MB (+366kb) [00:10:38]
+// HMemoryUtils.trashcanNow. Engine heap size: 487 MB. GUI used memory: 46 MB. Current time: 4/3/17 6:00:24 PM PDT
+// [Engine Memory]: 487 MB (+1976kb) [02:13:56]

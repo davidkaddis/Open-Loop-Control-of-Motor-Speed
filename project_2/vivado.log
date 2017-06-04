@@ -1,0 +1,879 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Mon May 15 15:50:46 2017
+# Process ID: 9872
+# Log file: C:/Users/David Amin/Documents/ECE 414/414L/project_2/vivado.log
+# Journal file: C:/Users/David Amin/Documents/ECE 414/414L/project_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'.
+open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:13 . Memory (MB): peak = 737.168 ; gain = 169.617
+remove_files {{C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/new/Fuzzy.vhd}}
+import_files -norecurse {{C:/Users/David Amin/Documents/ECE 414/414L/project_4/project_4.srcs/sources_1/new/Mem_dE.vhd} {C:/Users/David Amin/Documents/ECE 414/414L/project_4/project_4.srcs/sources_1/new/FL_Controller.vhd} {C:/Users/David Amin/Documents/ECE 414/414L/project_4/project_4.srcs/sources_1/new/Mem_E.vhd}}
+update_compile_order -fileset sources_1
+import_files -norecurse {{C:/Users/David Amin/Documents/ECE 414/414L/project_4/project_4.srcs/sources_1/new/Outputs.vhd} {C:/Users/David Amin/Documents/ECE 414/414L/project_4/project_4.srcs/sources_1/new/Registers.vhd}}
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse {{C:/Users/David Amin/Documents/ECE 414/414L/project_4/project_4.srcs/sim_1/new/tb_FL_Controller.vhd}}
+update_compile_order -fileset sim_1
+set_property top tb_FL_Controller [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_FL_Controller' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_FL_Controller_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Registers.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Registers
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Outputs.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Outputs
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Mem_E.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mem_E
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Mem_dE.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mem_dE
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/FL_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FL_Controller
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sim_1/imports/new/tb_FL_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_FL_Controller
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto da901576004747d19156bdc6d8750f9a --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_FL_Controller_behav xil_defaultlib.tb_FL_Controller -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Mem_E [mem_e_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mem_dE [mem_de_default]
+Compiling architecture behavioral of entity xil_defaultlib.Registers [registers_default]
+Compiling architecture behavioral of entity xil_defaultlib.Outputs [outputs_default]
+Compiling architecture behavioral of entity xil_defaultlib.FL_Controller [fl_controller_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_fl_controller
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot tb_FL_Controller_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/David -notrace
+couldn't read file "C:/Users/David": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Mon May 15 15:53:45 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_FL_Controller_behav -key {Behavioral:sim_1:Functional:tb_FL_Controller} -tclbatch {tb_FL_Controller.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source tb_FL_Controller.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_FL_Controller_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 793.605 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_FL_Controller' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_FL_Controller_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Registers.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Registers
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Outputs.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Outputs
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Mem_E.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mem_E
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Mem_dE.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mem_dE
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/FL_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FL_Controller
+ERROR: [VRFC 10-1471] type error near pw_sig ; current type unsigned; expected type std_logic_vector [C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/FL_Controller.vhd:367]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/FL_Controller.vhd:13]
+INFO: [VRFC 10-240] VHDL file C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/FL_Controller.vhd ignored due to errors
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_FL_Controller' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_FL_Controller_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Registers.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Registers
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Outputs.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Outputs
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Mem_E.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mem_E
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Mem_dE.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mem_dE
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/FL_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FL_Controller
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sim_1/imports/new/tb_FL_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_FL_Controller
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto da901576004747d19156bdc6d8750f9a --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_FL_Controller_behav xil_defaultlib.tb_FL_Controller -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Mem_E [mem_e_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mem_dE [mem_de_default]
+Compiling architecture behavioral of entity xil_defaultlib.Registers [registers_default]
+Compiling architecture behavioral of entity xil_defaultlib.Outputs [outputs_default]
+Compiling architecture behavioral of entity xil_defaultlib.FL_Controller [fl_controller_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_fl_controller
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot tb_FL_Controller_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/David -notrace
+couldn't read file "C:/Users/David": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Mon May 15 15:55:46 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_FL_Controller_behav -key {Behavioral:sim_1:Functional:tb_FL_Controller} -tclbatch {tb_FL_Controller.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source tb_FL_Controller.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_FL_Controller_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 794.320 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_FL_Controller' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_FL_Controller_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Registers.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Registers
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Outputs.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Outputs
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Mem_E.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mem_E
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Mem_dE.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mem_dE
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/FL_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FL_Controller
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sim_1/imports/new/tb_FL_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_FL_Controller
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto da901576004747d19156bdc6d8750f9a --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_FL_Controller_behav xil_defaultlib.tb_FL_Controller -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Mem_E [mem_e_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mem_dE [mem_de_default]
+Compiling architecture behavioral of entity xil_defaultlib.Registers [registers_default]
+Compiling architecture behavioral of entity xil_defaultlib.Outputs [outputs_default]
+Compiling architecture behavioral of entity xil_defaultlib.FL_Controller [fl_controller_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_fl_controller
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot tb_FL_Controller_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/David -notrace
+couldn't read file "C:/Users/David": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Mon May 15 15:56:50 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_FL_Controller_behav -key {Behavioral:sim_1:Functional:tb_FL_Controller} -tclbatch {tb_FL_Controller.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source tb_FL_Controller.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ERROR: Array sizes do not match, left array has 8 elements, right array has 12 elements
+Time: 1 ns  Iteration: 2  Process: /tb_FL_Controller/uut/Error/Eproc
+  File: C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Mem_E.vhd
+
+HDL Line: C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Mem_E.vhd:28
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_FL_Controller_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 796.988 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_FL_Controller' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_FL_Controller_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Registers.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Registers
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Outputs.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Outputs
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Mem_E.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mem_E
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Mem_dE.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mem_dE
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/FL_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FL_Controller
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sim_1/imports/new/tb_FL_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_FL_Controller
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto da901576004747d19156bdc6d8750f9a --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_FL_Controller_behav xil_defaultlib.tb_FL_Controller -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Mem_E [mem_e_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mem_dE [mem_de_default]
+Compiling architecture behavioral of entity xil_defaultlib.Registers [registers_default]
+Compiling architecture behavioral of entity xil_defaultlib.Outputs [outputs_default]
+Compiling architecture behavioral of entity xil_defaultlib.FL_Controller [fl_controller_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_fl_controller
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot tb_FL_Controller_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/David -notrace
+couldn't read file "C:/Users/David": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Mon May 15 15:57:14 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_FL_Controller_behav -key {Behavioral:sim_1:Functional:tb_FL_Controller} -tclbatch {tb_FL_Controller.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source tb_FL_Controller.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_FL_Controller_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 828.590 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_FL_Controller' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_FL_Controller_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Registers.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Registers
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Outputs.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Outputs
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Mem_E.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mem_E
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Mem_dE.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mem_dE
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/FL_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FL_Controller
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sim_1/imports/new/tb_FL_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_FL_Controller
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto da901576004747d19156bdc6d8750f9a --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_FL_Controller_behav xil_defaultlib.tb_FL_Controller -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-664] expression has 12 elements ; expected 8 [C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sim_1/imports/new/tb_FL_Controller.vhd:45]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit tb_fl_controller in library work failed.
+INFO: [USF-XSim-99] Step results log file:'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav/elaborate.log' file for more information.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_FL_Controller' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_FL_Controller_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Registers.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Registers
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Outputs.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Outputs
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Mem_E.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mem_E
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Mem_dE.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mem_dE
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/FL_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FL_Controller
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sim_1/imports/new/tb_FL_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_FL_Controller
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto da901576004747d19156bdc6d8750f9a --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_FL_Controller_behav xil_defaultlib.tb_FL_Controller -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-664] expression has 12 elements ; expected 8 [C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sim_1/imports/new/tb_FL_Controller.vhd:45]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit tb_fl_controller in library work failed.
+INFO: [USF-XSim-99] Step results log file:'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav/elaborate.log' file for more information.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_FL_Controller' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_FL_Controller_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Registers.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Registers
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Outputs.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Outputs
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Mem_E.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mem_E
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Mem_dE.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mem_dE
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/FL_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FL_Controller
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sim_1/imports/new/tb_FL_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_FL_Controller
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto da901576004747d19156bdc6d8750f9a --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_FL_Controller_behav xil_defaultlib.tb_FL_Controller -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Mem_E [mem_e_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mem_dE [mem_de_default]
+Compiling architecture behavioral of entity xil_defaultlib.Registers [registers_default]
+Compiling architecture behavioral of entity xil_defaultlib.Outputs [outputs_default]
+Compiling architecture behavioral of entity xil_defaultlib.FL_Controller [fl_controller_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_fl_controller
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot tb_FL_Controller_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/David -notrace
+couldn't read file "C:/Users/David": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Mon May 15 16:00:15 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_FL_Controller_behav -key {Behavioral:sim_1:Functional:tb_FL_Controller} -tclbatch {tb_FL_Controller.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source tb_FL_Controller.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ERROR: Array sizes do not match, left array has 8 elements, right array has 12 elements
+Time: 1 ns  Iteration: 2  Process: /tb_FL_Controller/uut/Error/Eproc
+  File: C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Mem_E.vhd
+
+HDL Line: C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Mem_E.vhd:48
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_FL_Controller_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 832.672 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_FL_Controller' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_FL_Controller_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Registers.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Registers
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Outputs.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Outputs
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Mem_E.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mem_E
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Mem_dE.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mem_dE
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/FL_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FL_Controller
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sim_1/imports/new/tb_FL_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_FL_Controller
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto da901576004747d19156bdc6d8750f9a --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_FL_Controller_behav xil_defaultlib.tb_FL_Controller -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-664] expression has 8 elements ; expected 12 [C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sim_1/imports/new/tb_FL_Controller.vhd:14]
+ERROR: [VRFC 10-664] expression has 8 elements ; expected 12 [C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sim_1/imports/new/tb_FL_Controller.vhd:15]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit tb_fl_controller in library work failed.
+INFO: [USF-XSim-99] Step results log file:'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav/elaborate.log' file for more information.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_FL_Controller' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_FL_Controller_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Registers.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Registers
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Outputs.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Outputs
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Mem_E.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mem_E
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Mem_dE.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mem_dE
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/FL_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FL_Controller
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sim_1/imports/new/tb_FL_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_FL_Controller
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto da901576004747d19156bdc6d8750f9a --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_FL_Controller_behav xil_defaultlib.tb_FL_Controller -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-664] expression has 8 elements ; expected 12 [C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sim_1/imports/new/tb_FL_Controller.vhd:21]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit tb_fl_controller in library work failed.
+INFO: [USF-XSim-99] Step results log file:'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav/elaborate.log' file for more information.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_FL_Controller' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_FL_Controller_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Registers.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Registers
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Outputs.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Outputs
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Mem_E.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mem_E
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Mem_dE.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mem_dE
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/FL_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FL_Controller
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sim_1/imports/new/tb_FL_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_FL_Controller
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto da901576004747d19156bdc6d8750f9a --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_FL_Controller_behav xil_defaultlib.tb_FL_Controller -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-664] expression has 8 elements ; expected 12 [C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sim_1/imports/new/tb_FL_Controller.vhd:21]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit tb_fl_controller in library work failed.
+INFO: [USF-XSim-99] Step results log file:'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav/elaborate.log' file for more information.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_FL_Controller' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_FL_Controller_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Registers.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Registers
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Outputs.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Outputs
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Mem_E.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mem_E
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Mem_dE.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mem_dE
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/FL_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FL_Controller
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sim_1/imports/new/tb_FL_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_FL_Controller
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto da901576004747d19156bdc6d8750f9a --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_FL_Controller_behav xil_defaultlib.tb_FL_Controller -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-664] expression has 8 elements ; expected 12 [C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sim_1/imports/new/tb_FL_Controller.vhd:21]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit tb_fl_controller in library work failed.
+INFO: [USF-XSim-99] Step results log file:'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav/elaborate.log' file for more information.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_FL_Controller' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_FL_Controller_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Registers.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Registers
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Outputs.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Outputs
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Mem_E.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mem_E
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Mem_dE.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mem_dE
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/FL_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FL_Controller
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sim_1/imports/new/tb_FL_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_FL_Controller
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto da901576004747d19156bdc6d8750f9a --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_FL_Controller_behav xil_defaultlib.tb_FL_Controller -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-664] expression has 8 elements ; expected 12 [C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sim_1/imports/new/tb_FL_Controller.vhd:21]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit tb_fl_controller in library work failed.
+INFO: [USF-XSim-99] Step results log file:'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav/elaborate.log' file for more information.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_FL_Controller' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_FL_Controller_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Registers.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Registers
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Outputs.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Outputs
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Mem_E.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mem_E
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Mem_dE.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mem_dE
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/FL_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FL_Controller
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sim_1/imports/new/tb_FL_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_FL_Controller
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto da901576004747d19156bdc6d8750f9a --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_FL_Controller_behav xil_defaultlib.tb_FL_Controller -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Mem_E [mem_e_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mem_dE [mem_de_default]
+Compiling architecture behavioral of entity xil_defaultlib.Registers [registers_default]
+Compiling architecture behavioral of entity xil_defaultlib.Outputs [outputs_default]
+Compiling architecture behavioral of entity xil_defaultlib.FL_Controller [fl_controller_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_fl_controller
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot tb_FL_Controller_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/David -notrace
+couldn't read file "C:/Users/David": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Mon May 15 16:08:47 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_FL_Controller_behav -key {Behavioral:sim_1:Functional:tb_FL_Controller} -tclbatch {tb_FL_Controller.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source tb_FL_Controller.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ERROR: Array sizes do not match, left array has 8 elements, right array has 12 elements
+Time: 1 ns  Iteration: 2  Process: /tb_FL_Controller/uut/Error/Eproc
+  File: C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Mem_E.vhd
+
+HDL Line: C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Mem_E.vhd:48
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_FL_Controller_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 832.672 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_FL_Controller' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_FL_Controller_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Registers.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Registers
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Outputs.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Outputs
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Mem_E.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mem_E
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Mem_dE.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mem_dE
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/FL_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FL_Controller
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sim_1/imports/new/tb_FL_Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_FL_Controller
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto da901576004747d19156bdc6d8750f9a --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_FL_Controller_behav xil_defaultlib.tb_FL_Controller -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Mem_E [mem_e_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mem_dE [mem_de_default]
+Compiling architecture behavioral of entity xil_defaultlib.Registers [registers_default]
+Compiling architecture behavioral of entity xil_defaultlib.Outputs [outputs_default]
+Compiling architecture behavioral of entity xil_defaultlib.FL_Controller [fl_controller_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_fl_controller
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot tb_FL_Controller_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/David -notrace
+couldn't read file "C:/Users/David": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Mon May 15 16:09:20 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_FL_Controller_behav -key {Behavioral:sim_1:Functional:tb_FL_Controller} -tclbatch {tb_FL_Controller.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source tb_FL_Controller.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_FL_Controller_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 832.828 ; gain = 0.156
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.2
+  **** Build date : Jun 26 2015-16:56:39
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292709249A
+set_property PROGRAM.FILE {C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.runs/impl_2/TOP.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.runs/impl_2/TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+close_hw
+set_property is_enabled false [get_files  {{C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/FL_Controller.vhd} {C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Mem_E.vhd} {C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Mem_dE.vhd} {C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Registers.vhd} {C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/imports/new/Outputs.vhd}}]
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 2
+[Mon May 15 19:14:12 2017] Launched synth_1...
+Run output will be captured here: C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.runs/synth_1/runme.log
+[Mon May 15 19:14:12 2017] Launched impl_2...
+Run output will be captured here: C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.runs/impl_2/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.2
+  **** Build date : Jun 26 2015-16:56:39
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 889.219 ; gain = 0.000
+open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292709249A
+set_property PROGRAM.FILE {C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.runs/impl_2/TOP.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.runs/impl_2/TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-3175] Target jsn-Nexys4DDR-210292709249A is no longer available.
+Please use disconnect_hw_server to close the current server connection. Check cable connectivity and that the target board is powered up.
+Restart the hw_server application running on host localhost, port 3121 and then use connect_hw_server to re-establish connection to target.
+close_hw_target
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost/xilinx_tcf/Digilent/210292709249A
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May 15 19:49:01 2017...

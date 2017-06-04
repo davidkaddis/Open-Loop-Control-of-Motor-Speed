@@ -1,0 +1,397 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Mon Apr 17 15:14:39 2017
+# Process ID: 12012
+# Log file: C:/Users/David Amin/Documents/ECE 414/414L/project_2/vivado.log
+# Journal file: C:/Users/David Amin/Documents/ECE 414/414L/project_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/David Amin/Documents/ECE 424/424 Lab/project_2' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 742.086 ; gain = 178.805
+close [ open {C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/new/PWM.vhd} w ]
+add_files {{C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/new/PWM.vhd}}
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'DisplayController_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj DisplayController_test_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/new/DisplayController.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity DisplayController
+WARNING: [VRFC 10-1256] possible infinite loop; process does not have a wait statement [C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/new/DisplayController.vhd:24]
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sim_1/new/DisplayController_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity DisplayController_test
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto da901576004747d19156bdc6d8750f9a --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot DisplayController_test_behav xil_defaultlib.DisplayController_test -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.DisplayController [displaycontroller_default]
+Compiling architecture behavioral of entity xil_defaultlib.displaycontroller_test
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot DisplayController_test_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/David -notrace
+couldn't read file "C:/Users/David": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Mon Apr 17 15:35:19 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 779.371 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "DisplayController_test_behav -key {Behavioral:sim_1:Functional:DisplayController_test} -tclbatch {DisplayController_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source DisplayController_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 794.113 ; gain = 0.793
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 794.113 ; gain = 14.742
+INFO: [Common 17-344] 'xsim' was cancelled
+1
+    while executing
+"catch {eval "xsim $cmd_args"} err_msg"
+    (procedure "tclapp::xilinx::xsim::simulate" line 58)
+    invoked from within
+"tclapp::xilinx::xsim::simulate { -simset sim_1 -mode behavioral -run_dir {C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/beh..."
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:30 . Memory (MB): peak = 794.113 ; gain = 14.742
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sim_1/new/PWMtest.vhd} w ]
+add_files -fileset sim_1 {{C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sim_1/new/PWMtest.vhd}}
+update_compile_order -fileset sim_1
+set_property top PWMtest [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'PWMtest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj PWMtest_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/new/PWM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PWM
+ERROR: [VRFC 10-724] found '0' definitions of operator "<", cannot determine exact overloaded matching definition for "<" [C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/new/PWM.vhd:29]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/new/PWM.vhd:12]
+INFO: [VRFC 10-240] VHDL file C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/new/PWM.vhd ignored due to errors
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'PWMtest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj PWMtest_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/new/PWM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PWM
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sim_1/new/PWMtest.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PWMtest
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto da901576004747d19156bdc6d8750f9a --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot PWMtest_behav xil_defaultlib.PWMtest -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-664] expression has 11 elements ; expected 12 [C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/new/PWM.vhd:15]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit pwmtest in library work failed.
+INFO: [USF-XSim-99] Step results log file:'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav/elaborate.log' file for more information.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'PWMtest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj PWMtest_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/new/PWM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PWM
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sim_1/new/PWMtest.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PWMtest
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto da901576004747d19156bdc6d8750f9a --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot PWMtest_behav xil_defaultlib.PWMtest -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.PWM [pwm_default]
+Compiling architecture behavioral of entity xil_defaultlib.pwmtest
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot PWMtest_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/David -notrace
+couldn't read file "C:/Users/David": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Mon Apr 17 15:48:48 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "PWMtest_behav -key {Behavioral:sim_1:Functional:PWMtest} -tclbatch {PWMtest.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source PWMtest.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'PWMtest_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 798.195 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'PWMtest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj PWMtest_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/new/PWM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PWM
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sim_1/new/PWMtest.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PWMtest
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto da901576004747d19156bdc6d8750f9a --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot PWMtest_behav xil_defaultlib.PWMtest -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.PWM [pwm_default]
+Compiling architecture behavioral of entity xil_defaultlib.pwmtest
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot PWMtest_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/David -notrace
+couldn't read file "C:/Users/David": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Mon Apr 17 15:52:25 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "PWMtest_behav -key {Behavioral:sim_1:Functional:PWMtest} -tclbatch {PWMtest.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source PWMtest.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'PWMtest_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 798.852 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'PWMtest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj PWMtest_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/new/PWM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PWM
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sim_1/new/PWMtest.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PWMtest
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto da901576004747d19156bdc6d8750f9a --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot PWMtest_behav xil_defaultlib.PWMtest -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.PWM [pwm_default]
+Compiling architecture behavioral of entity xil_defaultlib.pwmtest
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot PWMtest_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/David -notrace
+couldn't read file "C:/Users/David": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Mon Apr 17 15:53:18 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "PWMtest_behav -key {Behavioral:sim_1:Functional:PWMtest} -tclbatch {PWMtest.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source PWMtest.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'PWMtest_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 804.020 ; gain = 5.168
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 2
+[Mon Apr 17 18:44:30 2017] Launched synth_1...
+Run output will be captured here: C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.runs/synth_1/runme.log
+[Mon Apr 17 18:44:30 2017] Launched impl_2...
+Run output will be captured here: C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.runs/impl_2/runme.log
+reset_run impl_2 -noclean_dir 
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 2
+[Mon Apr 17 18:47:42 2017] Launched synth_1...
+Run output will be captured here: C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.runs/synth_1/runme.log
+[Mon Apr 17 18:47:42 2017] Launched impl_2...
+Run output will be captured here: C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.runs/impl_2/runme.log
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 2
+[Mon Apr 17 18:48:31 2017] Launched synth_1...
+Run output will be captured here: C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.runs/synth_1/runme.log
+[Mon Apr 17 18:48:31 2017] Launched impl_2...
+Run output will be captured here: C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.runs/impl_2/runme.log
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 2
+[Mon Apr 17 18:49:06 2017] Launched synth_1...
+Run output will be captured here: C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.runs/synth_1/runme.log
+[Mon Apr 17 18:49:06 2017] Launched impl_2...
+Run output will be captured here: C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.runs/impl_2/runme.log
+reset_run impl_2 -noclean_dir 
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 2
+[Mon Apr 17 18:50:39 2017] Launched synth_1...
+Run output will be captured here: C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.runs/synth_1/runme.log
+[Mon Apr 17 18:50:39 2017] Launched impl_2...
+Run output will be captured here: C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.runs/impl_2/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.2
+  **** Build date : Jun 26 2015-16:56:39
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0]
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292709249A
+set_property PROGRAM.FILE {C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.runs/impl_2/TOP.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.runs/impl_2/TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-3175] Target jsn-Nexys4DDR-210292709249A is no longer available.
+Please use disconnect_hw_server to close the current server connection. Check cable connectivity and that the target board is powered up.
+Restart the hw_server application running on host localhost, port 3121 and then use connect_hw_server to re-establish connection to target.
+close_hw_target
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost/xilinx_tcf/Digilent/210292709249A
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 17 21:30:33 2017...

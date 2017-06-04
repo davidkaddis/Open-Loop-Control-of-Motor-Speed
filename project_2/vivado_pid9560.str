@@ -1,0 +1,254 @@
+/*
+
+Vivado v2015.2 (64-bit)
+SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+Process ID: 9560
+
+Current time: 	5/8/17 1:38:09 PM PDT
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Windows 8
+Version: 6.2
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1600x900
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_25 64-bit
+Java home: 	C:/Xilinx/Vivado/2015.2/tps/win64/jre
+
+User name: 	David Amin
+User directory: C:/Users/David Amin/Documents/ECE 414/414L/project_2
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+Vivado preferences path: C:/Users/David Amin/AppData/Roaming/Xilinx/Vivado/2015.2/vivado.ini
+Vivado layouts directory: C:/Users/David Amin/AppData/Roaming/Xilinx/Vivado/2015.2/layouts/application
+
+GUI allocated memory:	127 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 366 MB
+
+*/
+
+// TclEventType: START_GUI
+// HColorUtils.generateUniqueColorPalette (num colors: 56) elapsed time: 1.3s
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 33 MB (+31705kb) [00:00:20]
+// [Engine Memory]: 343 MB (+208386kb) [00:00:20]
+// TclEventType: PROJECT_OPEN_DIALOG
+// cp:P (cl:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\David Amin\Documents\ECE 414\414L\project_2\project_2.xpr. Version: Vivado v2015.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.xpr} 
+// HMemoryUtils.trashcanNow. Engine heap size: 375 MB. GUI used memory: 27 MB. Current time: 5/8/17 1:38:11 PM PDT
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// [Engine Memory]: 383 MB (+23452kb) [00:00:26]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 48 MB (+14583kb) [00:00:31]
+// [GUI Memory]: 52 MB (+986kb) [00:00:32]
+// [Engine Memory]: 417 MB (+16181kb) [00:00:34]
+// [GUI Memory]: 55 MB (+515kb) [00:00:37]
+// [Engine Memory]: 452 MB (+14023kb) [00:00:37]
+// [GUI Memory]: 58 MB (+1094kb) [00:00:38]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: open_project {C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 457 MB. GUI used memory: 34 MB. Current time: 5/8/17 1:38:26 PM PDT
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: project_2; location: C:/Users/David Amin/Documents/ECE 414/414L/project_2; part: xc7a100tcsg324-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:18 . Memory (MB): peak = 645.910 ; gain = 77.137 
+dismissDialog("Open Project"); // cp:P (cl:JFrame)
+// [Engine Memory]: 479 MB (+5288kb) [00:00:41]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 36 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP - Behavioral (TOP.vhd)]", 1); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // A:k (H:JPanel, cl:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // A:k (H:JPanel, cl:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // X:JMenu (ai:JPopupMenu, cl:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // X:JMenu (ai:JPopupMenu, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cl:JFrame): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // w:JideButton (CommandBar:DockableBar, b:g)
+selectMenuItem(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File..."); // ab:JMenuItem (ai:JPopupMenu, b:g)
+// I:ag (b:g): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "Fuzzy"); // ao:JTextField (JPanel:JComponent, I:ag)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, I:ag)
+dismissDialog("Create Source File"); // I:ag (b:g)
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'f' command handler elapsed time: 21 seconds
+dismissDialog("Add Sources"); // b:g (cl:JFrame)
+// Tcl Message: close [ open {C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/new/Fuzzy.vhd} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.srcs/sources_1/new/Fuzzy.vhd}} 
+// L:ag (cl:JFrame): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, L:ag)
+// [GUI Memory]: 62 MB (+302kb) [00:02:36]
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 59 seconds
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, U:JDialog)
+dismissDialog("Define Module"); // L:ag (cl:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 65 MB (+544kb) [00:02:50]
+// [GUI Memory]: 69 MB (+247kb) [00:03:02]
+// PAPropertyPanels.initPanels (Fuzzy.vhd) elapsed time: 0.2s
+// Elapsed time: 23 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Fuzzy - Behavioral (Fuzzy.vhd)]", 9, false); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Fuzzy - Behavioral (Fuzzy.vhd)]", 9, false); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Fuzzy - Behavioral (Fuzzy.vhd)]", 9, false, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click
+// [GUI Memory]: 73 MB (+439kb) [00:03:19]
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP - Behavioral (TOP.vhd), PWM0 - PWM - Behavioral (PWM.vhd)]", 7, false); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP - Behavioral (TOP.vhd), PWM0 - PWM - Behavioral (PWM.vhd)]", 7, false, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click
+// Elapsed time: 24 seconds
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Fuzzy.vhd", 1, false, true); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame) - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P:a (Workspace:JPanel, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Fuzzy.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Fuzzy.vhd", 1, false, true); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame) - Double Click
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // P:a (Workspace:JPanel, cl:JFrame)
+selectCodeEditor("Fuzzy.vhd", 58, 219); // bj:J (JPanel:JComponent, cl:JFrame)
+// [Engine Memory]: 504 MB (+766kb) [00:03:54]
+// HMemoryUtils.trashcanNow. Engine heap size: 504 MB. GUI used memory: 46 MB. Current time: 5/8/17 1:41:41 PM PDT
+selectCodeEditor("Fuzzy.vhd", 14, 111); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Fuzzy.vhd", 382, 89); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Fuzzy.vhd", 220, 150); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Fuzzy.vhd", 17, 139); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Fuzzy.vhd", 56, 146); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 53 seconds
+selectCodeEditor("Fuzzy.vhd", 330, 146); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 28 seconds
+selectCodeEditor("Fuzzy.vhd", 233, 158); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Fuzzy.vhd", 230, 160); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Fuzzy.vhd", 300, 161); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Fuzzy.vhd", 378, 173); // bj:J (JPanel:JComponent, cl:JFrame)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCheckBox(PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String) null, false); // h:JCheckBox (JPanel:JComponent, cl:JFrame): FALSE
+// [GUI Memory]: 78 MB (+1335kb) [00:05:48]
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, false); // h:JCheckBox (JPanel:JComponent, cl:JFrame): FALSE
+selectCodeEditor("Fuzzy.vhd", 143, 306); // bj:J (JPanel:JComponent, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PWM.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("PWM.vhd", 194, 231); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "PWM.vhd", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Fuzzy.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+// [GUI Memory]: 83 MB (+1724kb) [00:06:05]
+selectCodeEditor("Fuzzy.vhd", 119, 230); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "Fuzzy.vhd", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Fuzzy.vhd", 147, 224); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 36 seconds
+selectCodeEditor("Fuzzy.vhd", 185, 243); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PWM.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Fuzzy.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+// Elapsed time: 72 seconds
+selectCodeEditor("Fuzzy.vhd", 84, 270); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Fuzzy.vhd", 233, 274); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Fuzzy.vhd", 236, 268); // bj:J (JPanel:JComponent, cl:JFrame)
+// [GUI Memory]: 87 MB (+67kb) [00:10:42]
+// HMemoryUtils.trashcanNow. Engine heap size: 511 MB. GUI used memory: 53 MB. Current time: 5/8/17 2:11:42 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 511 MB. GUI used memory: 51 MB. Current time: 5/8/17 2:46:53 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 511 MB. GUI used memory: 36 MB. Current time: 5/8/17 3:16:54 PM PDT
+// Elapsed time: 6316 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 26, true); // w:Y (v:H, cl:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // i:l (JPanel:JComponent, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// cp:P (cl:JFrame):  Auto Connect : addNotify
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2015.2   **** Build date : Jun 26 2015-16:56:39     ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// Tcl Message: open_hw_target [lindex [get_hw_targets -of_objects [get_hw_servers localhost]] 0] 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292709249A 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.runs/impl_2/TOP.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: current_hw_device [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // cp:P (cl:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // i:l (JPanel:JComponent, cl:JFrame)
+selectMenuItem((HResource) null, "xc7a100t_0"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aC:ag (cl:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aC:ag)
+// cp:P (cl:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aC:ag (cl:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/David Amin/Documents/ECE 414/414L/project_2/project_2.runs/impl_2/TOP.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'x' command handler elapsed time: 7 seconds
+dismissDialog("Program Device"); // cp:P (cl:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 511 MB. GUI used memory: 38 MB. Current time: 5/8/17 3:46:56 PM PDT
+// Tcl Message: ERROR: [Labtools 27-3175] Target jsn-Nexys4DDR-210292709249A is no longer available. Please use disconnect_hw_server to close the current server connection. Check cable connectivity and that the target board is powered up. Restart the hw_server application running on host localhost, port 3121 and then use connect_hw_server to re-establish connection to target. 
+// Tcl Message: close_hw_target 
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// Tcl Message: INFO: [Labtoolstcl 44-464] Closing hw_target localhost/xilinx_tcf/Digilent/210292709249A 
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// HMemoryUtils.trashcanNow. Engine heap size: 511 MB. GUI used memory: 36 MB. Current time: 5/8/17 9:45:52 PM PDT

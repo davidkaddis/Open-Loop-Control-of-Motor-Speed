@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_2" LaunchPart="xc7a100tcsg324-1" LaunchTime="1494900851">
+  <File Type="OPT-DCP" Name="TOP_opt.dcp"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_2/constrs_in.xml"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_2/sources.xml"/>
+  <File Type="PWROPT-DCP" Name="TOP_pwropt.dcp"/>
+  <File Type="ROUTE-DCP" Name="TOP_routed.dcp"/>
+  <File Type="PA-TCL" Name="TOP.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_2/impl_2.psg"/>
+  <File Type="OPT-DRC" Name="TOP_drc_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="TOP_drc_pwropted.rpt"/>
+  <File Type="OPT-HWDEF" Name="TOP.hwdef"/>
+  <File Type="PLACE-DCP" Name="TOP_placed.dcp"/>
+  <File Type="PLACE-IO" Name="TOP_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="TOP_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="TOP_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="TOP_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="TOP_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="TOP_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="TOP_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="TOP_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="TOP_physopt.dcp"/>
+  <File Type="RDI-RDI" Name="TOP.vdi"/>
+  <File Type="PHYSOPT-DRC" Name="TOP_drc_physopted.rpt"/>
+  <File Type="ROUTE-DRC" Name="TOP_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="TOP_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="TOP_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="TOP_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="TOP_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="TOP_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="TOP_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="TOP_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="TOP_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="TOP_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="TOP_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="TOP_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="TOP_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="TOP_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="TOP_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="TOP.bit"/>
+  <File Type="BG-BIN" Name="TOP.bin"/>
+  <File Type="BITSTR-MSK" Name="TOP.msk"/>
+  <File Type="BITSTR-RBT" Name="TOP.rbt"/>
+  <File Type="BITSTR-NKY" Name="TOP.nky"/>
+  <File Type="BITSTR-BMM" Name="TOP_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="TOP.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="TOP.sysdef"/>
+  <File Type="BG-BGN" Name="TOP.bgn"/>
+  <File Type="BG-DRC" Name="TOP.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/new/count20.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../ECE 424/424 Lab/DL/project_1/project_1.srcs/sources_1/new/count20.vhd"/>
+        <Attr Name="ImportTime" Val="1485134228"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/binary2sevseg.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../ECE 424/424 Lab/DL/project_1/project_1.srcs/sources_1/new/binary2sevseg.vhd"/>
+        <Attr Name="ImportTime" Val="1485130848"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/ram8x6.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../ECE 424/424 Lab/DL/project_1/project_1.srcs/sources_1/new/ram8x6.vhd"/>
+        <Attr Name="ImportTime" Val="1484801136"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/decoder3to8.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../ECE 424/424 Lab/DL/project_1/project_1.srcs/sources_1/new/decoder3to8.vhd"/>
+        <Attr Name="ImportTime" Val="1485135542"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/PWM.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DisplayController.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ADC_Controller.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/B2BCD.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/DisplayInterface.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../ECE 424/424 Lab/DL/project_1/project_1.srcs/sources_1/new/DisplayInterface.vhd"/>
+        <Attr Name="ImportTime" Val="1484801164"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/TOP.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/debouncer.vhd">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../ECE 424/424 Lab/DL/project_1/project_1.srcs/sources_1/new/debouncer.vhd"/>
+        <Attr Name="ImportTime" Val="1484801182"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Main.vhd">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../ECE 424/424 Lab/DL/project_1/project_1.srcs/sources_1/new/Main.vhd"/>
+        <Attr Name="ImportTime" Val="1484801206"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/design_1/design_1.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Mem_dE.vhd">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_4/project_4.srcs/sources_1/new/Mem_dE.vhd"/>
+        <Attr Name="ImportTime" Val="1494466577"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/FL_Controller.vhd">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_4/project_4.srcs/sources_1/new/FL_Controller.vhd"/>
+        <Attr Name="ImportTime" Val="1494887877"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Mem_E.vhd">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_4/project_4.srcs/sources_1/new/Mem_E.vhd"/>
+        <Attr Name="ImportTime" Val="1494887700"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Outputs.vhd">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_4/project_4.srcs/sources_1/new/Outputs.vhd"/>
+        <Attr Name="ImportTime" Val="1494297907"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Registers.vhd">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_4/project_4.srcs/sources_1/new/Registers.vhd"/>
+        <Attr Name="ImportTime" Val="1494294831"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="TOP"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/Nexys4DDR_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1444150770"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream">
+      <Option Id="BinFile">1</Option>
+    </Step>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="xadc_wiz_1"/>
+</GenRun>

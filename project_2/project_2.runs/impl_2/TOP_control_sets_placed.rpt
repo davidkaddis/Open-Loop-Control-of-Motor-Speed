@@ -1,0 +1,67 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date         : Mon May 15 19:15:34 2017
+| Host         : David running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TOP_control_sets_placed.rpt
+| Design       : TOP
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    14 |
+| Minimum Number of register sites lost to control set restrictions |    44 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              65 |           24 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              99 |           34 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++------------------------+-------------------------------------+------------------+------------------+----------------+
+|      Clock Signal      |            Enable Signal            | Set/Reset Signal | Slice Load Count | Bel Load Count |
++------------------------+-------------------------------------+------------------+------------------+----------------+
+|  clk_IBUF_BUFG         | B2BCD0/d3t[3]_i_1_n_0               |                  |                1 |              4 |
+|  clk_IBUF_BUFG         | B2BCD0/d2t[3]_i_1_n_0               |                  |                1 |              4 |
+|  clk_IBUF_BUFG         | B2BCD0/d1t[3]_i_1_n_0               |                  |                2 |              4 |
+|  clk_IBUF_BUFG         | DisplayController0/waddt[2]_i_1_n_0 |                  |                5 |              7 |
+|  clk_IBUF_BUFG         | DisplayController0/w                |                  |                1 |              8 |
+|  clk_IBUF_BUFG         | ADC_Controller0/E[0]                |                  |                6 |             12 |
+|  clk_IBUF_BUFG         | ADC_Controller0/v_2[11]_i_1_n_0     |                  |                4 |             12 |
+|  clk_IBUF_BUFG         | ADC_Controller0/v_1[11]_i_1_n_0     |                  |                5 |             12 |
+|  clk_IBUF_BUFG         | ADC_Controller0/PC_reg[11]          |                  |                3 |             12 |
+|  ADC_Controller0/state |                                     |                  |                5 |             12 |
+| ~ADC_Controller0/state |                                     |                  |                4 |             12 |
+|  clk_IBUF_BUFG         | B2BCD0/dv23t[3]_i_1_n_0             |                  |                3 |             16 |
+|  clk_IBUF_BUFG         | B2BCD0/dv13t[3]_i_1_n_0             |                  |                4 |             16 |
+|  clk_IBUF_BUFG         |                                     |                  |               15 |             41 |
++------------------------+-------------------------------------+------------------+------------------+----------------+
+
+
